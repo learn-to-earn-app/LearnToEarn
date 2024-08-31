@@ -1,0 +1,191 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.app-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app-logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.app-info {
+    max-width: 600px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.rating {
+    margin: 0.5em 0;
+}
+
+.stars {
+    font-size: 1.2em;
+    color: #f39c12;
+}
+
+.rating-count {
+    font-size: 1em;
+    color: #666;
+    margin-left: 10px;
+}
+
+.stats {
+    margin: 1em 0;
+    font-size: 1em;
+    color: #666;
+}
+
+.downloads {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.updated {
+    display: block;
+}
+
+.install-button {
+    display: inline-block;
+    background: #1e88e5;
+    color: #fff;
+    padding: 0.75em 1.5em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin-top: 1em;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.install-button:hover {
+    background: #1565c0;
+    transform: scale(1.05);
+}
+
+.screenshots {
+    margin: 2em 0;
+}
+
+.screenshot-gallery {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px 0;
+    scroll-snap-type: x mandatory;
+}
+
+.screenshot {
+    width: 200px; /* Adjusted size */
+    height: 300px; /* Adjusted size */
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: start;
+}
+
+.about {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 2em 0;
+}
+
+.reviews {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 2em 0;
+}
+
+.review {
+    border-bottom: 1px solid #ddd;
+    padding: 1em 0;
+}
+
+.review:last-child {
+    border-bottom: none;
+}
+
+.banner {
+    margin: 2em 0;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    .app-info {
+        padding: 0 1em;
+    }
+
+    .app-details {
+        text-align: center;
+    }
+
+    .screenshot-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .screenshot {
+        width: 80%;
+        max-width: 200px;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .app-logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .install-button {
+        font-size: 1em;
+        padding: 0.5em 1em;
+    }
+
+    .screenshot {
+        width: 80%;
+        max-width: 150px;
+        height: auto;
+    }
+}
